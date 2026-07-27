@@ -2,52 +2,69 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Menu - Sarah Maison</title>
+
+    <link rel="stylesheet" href="./assets/css/styles.css" />
   </head>
+
   <body>
     <!-- NAVBAR -->
-    <nav>
-      <div>
-        <a class="navbar-brand mx-lg-auto mb-lg-4" href="#">
-          <span class="h3 fw-bold d-block d-lg-none brand">Sarah Maison</span>
+
+    <nav class="site-navigation">
+      <div class="navigation-container">
+        <a class="site-name" href="./index.html">
+          <span class="site-name-text"> Sarah Maison </span>
+
           <img
             src="./assets/images/main_image_baker.jpg"
-            class="d-none d-lg-block rounded-circle"
+            class="site-image"
             alt="A baker holding a ball of raw dough in a warm bakery environment"
             width="100"
             height="100"
           />
         </a>
-        <div id="navbarNav">
-          <ul>
-            <li>
-              <a href="./index.html">Home</a>
+
+        <div class="navigation-menu">
+          <ul class="navigation-links">
+            <li class="navigation-item">
+              <a class="navigation-link" href="./index.html"> Home </a>
             </li>
-            <li>
-              <a href="./menu.html">Menu</a>
+
+            <li class="navigation-item">
+              <a class="navigation-link" href="./menu.html"> Menu </a>
             </li>
-            <li>
-              <a href="./order.html">Order</a>
+
+            <li class="navigation-item">
+              <a class="navigation-link" href="./order.html"> Order </a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <!-- MENU -->
-    <section id="menu" class="full-height px-lg-5">
-      <div class="container">
-        <div class="row pb-4">
-          <div class="col-lg-8">
-            <h1>Menu</h1>
-            <h2 class="tagline">Our Feshest treats</h2>
-          </div>
-        </div>
 
-        <div class="row gy-5">
-          <div class="col-lg-6">
-            <div>
-              <div>
+    <!-- MENU -->
+
+    <main class="main-content">
+      <section class="page-section menu-section">
+        <div class="menu-container">
+          <!-- MENU INTRODUCTION -->
+
+          <div class="menu-introduction">
+            <h1>Menu</h1>
+
+            <h2 class="menu-tagline">Our Feshest treats</h2>
+          </div>
+
+          <!-- MENU CATEGORIES -->
+
+          <div class="menu-categories">
+            <!-- DRINKS MENU -->
+
+            <div class="menu-category">
+              <div class="menu-image-container">
                 <img
                   src="./assets/images/drinks_api.jpg"
                   alt="A display of a wine bottle with two glasses of wine"
@@ -55,42 +72,89 @@
                   height="300"
                 />
               </div>
-              <div>
+
+              <div class="menu-category-content">
                 <h2>Drinks Menu</h2>
+
                 <p>
                   Quench your thirst by selecting one of our home brewed drinks!
                 </p>
 
-                <div>
-                  <h3>Hot Beverages</h3>
-                  <ul>
-                    <li>Coffee <span class="price">3 EUR</span></li>
-                    <li>Tea <span class="price">2 EUR</span></li>
-                    <li>Juice <span class="price">4 EUR</span></li>
-                  </ul>
+                <!-- HOT BEVERAGES -->
 
-                  <h3>Cold Beverages</h3>
-                  <ul>
-                    <li>Lemonade <span class="price">3 EUR</span></li>
-                    <li>Ice Tea Macchiato <span class="price">5 EUR</span></li>
-                    <li>Juice <span class="price">4 EUR</span></li>
+                <div class="menu-subcategory">
+                  <h3>Hot Beverages</h3>
+
+                  <ul class="menu-items">
+                    <li class="menu-item">
+                      Coffee
+                      <span class="price">3 EUR</span>
+                    </li>
+
+                    <li class="menu-item">
+                      Tea
+                      <span class="price">2 EUR</span>
+                    </li>
+
+                    <li class="menu-item">
+                      Juice
+                      <span class="price">4 EUR</span>
+                    </li>
                   </ul>
+                </div>
+
+                <!-- COLD BEVERAGES -->
+
+                <div class="menu-subcategory">
+                  <h3>Cold Beverages</h3>
+
+                  <ul class="menu-items">
+                    <li class="menu-item">
+                      Lemonade
+                      <span class="price">3 EUR</span>
+                    </li>
+
+                    <li class="menu-item">
+                      Ice Tea Macchiato
+                      <span class="price">5 EUR</span>
+                    </li>
+
+                    <li class="menu-item">
+                      Juice
+                      <span class="price">4 EUR</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- SPICY BEVERAGES -->
+
+                <div class="menu-subcategory">
                   <h3>Spicy Beverages</h3>
-                  <ul>
-                    <li>Chilli Milk <span class="price">6 EUR</span></li>
-                    <li>Jalapeno Juice <span class="price">7 EUR</span></li>
-                    <li>
-                      Another Spicy Drink <span class="price">8 EUR</span>
+
+                  <ul class="menu-items">
+                    <li class="menu-item">
+                      Chilli Milk
+                      <span class="price">6 EUR</span>
+                    </li>
+
+                    <li class="menu-item">
+                      Jalapeno Juice
+                      <span class="price">7 EUR</span>
+                    </li>
+
+                    <li class="menu-item">
+                      Another Spicy Drink
+                      <span class="price">8 EUR</span>
                     </li>
                   </ul>
                 </div>
               </div>
             </div>
-          </div>
 
-          <div>
-            <div>
-              <div>
+            <!-- BAKED GOODS -->
+
+            <div class="menu-category">
+              <div class="menu-image-container">
                 <img
                   src="./assets/images/resume_the_connoisseur.jpg"
                   alt="Fresh baked colorfull Macaron"
@@ -98,58 +162,100 @@
                   height="300"
                 />
               </div>
-              <div>
+
+              <div class="menu-category-content">
                 <h2>Baked Goods</h2>
+
                 <p>
                   Quench your cravings by selecting one of our home baked goods!
                 </p>
-                <div>
-                  <h3>Delicacies Pâtisseries</h3>
-                  <ul>
-                    <li>Soufflé</li>
-                    <li>Tart</li>
-                    <li>Muffin</li>
-                  </ul>
 
-                  <h3>Breads</h3>
-                  <ul>
-                    <li>Croissant</li>
-                    <li>Baguette</li>
-                    <li>Ciabatta</li>
+                <!-- DELICACIES PÂTISSERIES -->
+
+                <div class="menu-subcategory">
+                  <h3>Delicacies Pâtisseries</h3>
+
+                  <ul class="menu-items">
+                    <li class="menu-item">
+                      Soufflé<span class="price">7 EUR</span>
+                    </li>
+
+                    <li class="menu-item">
+                      Tart<span class="price">5 EUR</span>
+                    </li>
+
+                    <li class="menu-item">
+                      Muffin<span class="price">4 EUR</span>
+                    </li>
                   </ul>
+                </div>
+
+                <!-- BREADS -->
+
+                <div class="menu-subcategory">
+                  <h3>Breads</h3>
+
+                  <ul class="menu-items">
+                    <li class="menu-item">
+                      Croissant<span class="price">3 EUR</span>
+                    </li>
+
+                    <li class="menu-item">
+                      Baguette<span class="price">4 EUR</span>
+                    </li>
+
+                    <li class="menu-item">
+                      Ciabatta<span class="price">5 EUR</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- COOKIES -->
+
+                <div class="menu-subcategory">
                   <h3>Cookies</h3>
-                  <ul>
-                    <li>Chocolate Chip</li>
-                    <li>Oatmeal Raisin</li>
-                    <li>Peanut Butter</li>
+
+                  <ul class="menu-items">
+                    <li class="menu-item">
+                      Chocolate Chip<span class="price">3 EUR</span>
+                    </li>
+
+                    <li class="menu-item">
+                      Oatmeal Raisin<span class="price">3 EUR</span>
+                    </li>
+
+                    <li class="menu-item">
+                      Peanut Butter<span class="price">3 EUR</span>
+                    </li>
                   </ul>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- MENU -->
+      </section>
+    </main>
+
     <!-- FOOTER -->
-    <footer>
-      <div class="container">
-        <div>
-          <div>
-            <p class="mb-0">
-              Made with 💜 by <a href="#" class="fw-bold">sandramsc ©2026</a>
-            </p>
-          </div>
-          <div>
-            <div>
-              <a href="https://github.com/sandramsc"
-                ><i class="lab la-github"></i
-              ></a>
-              <a href="https://www.instagram.com/in/bakery"
-                ><i class="lab la-linkedin"></i
-              ></a>
-            </div>
-          </div>
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-content">
+          <p class="footer-text">
+            Made with 💜 by
+
+            <a href="#" class="footer-link"> sandramsc ©2026 </a>
+          </p>
+        </div>
+
+        <div class="social-links">
+          <a href="https://github.com/sandramsc">
+            <i class="lab la-github"></i>
+          </a>
+
+          <a href="https://www.instagram.com/in/bakery">
+            <i class="lab la-linkedin"></i>
+          </a>
         </div>
       </div>
     </footer>
