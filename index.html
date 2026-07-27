@@ -4,24 +4,47 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Sarah Maison</title>
-    <link rel="icon" type="image/x-icon" href="./assets/images/person.png" />
+
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./assets/images/main_image_baker.jpg"
+    />
+
+    <link rel="stylesheet" href="./assets/css/styles.css" />
   </head>
 
   <body>
     <!-- NAVBAR -->
-    <nav>
-      <div>
-        <div id="navbarNav">
-          <ul>
-            <li>
-              <a href="./index.html">Home</a>
+
+    <nav class="site-navigation">
+      <div class="navigation-container">
+        <a class="site-name" href="./index.html">
+          <span class="site-name-text">Sarah Maison</span>
+
+          <img
+            src="./assets/images/main_image_baker.jpg"
+            class="site-image"
+            alt="A baker holding a ball of raw dough in a warm bakery environment"
+            width="100"
+            height="100"
+          />
+        </a>
+
+        <div class="navigation-menu">
+          <ul class="navigation-links">
+            <li class="navigation-item">
+              <a class="navigation-link" href="./index.html"> Home </a>
             </li>
-            <li>
-              <a href="./menu.html">Menu</a>
+
+            <li class="navigation-item">
+              <a class="navigation-link" href="./menu.html"> Menu </a>
             </li>
-            <li>
-              <a href="./order.html">Order</a>
+
+            <li class="navigation-item">
+              <a class="navigation-link" href="./order.html"> Order </a>
             </li>
           </ul>
         </div>
@@ -29,81 +52,93 @@
     </nav>
 
     <!-- CONTENT WRAPPER -->
-    <div id="content-wrapper">
+
+    <div class="main-content">
       <!-- HOME -->
-      <section id="home">
-        <div class="container">
-          <div>
-            <div>
-              <h1>
-                I'M <span class="text-brand"> Sarah </span> a Baker based
-                somewhere on <em>EARTH</em>
-              </h1>
-              <img
-                src="./images/main_image_baker.jpg"
-                alt="A baker holding a ball of raw dough in a warm bakery environment"
-                width="250"
-                height="300"
-              />
-              <p class="lead mt-2 mb-4" data-aos="fade-up" data-aos-delay="300">
-                Welcome to <strong>Sarah Maison</strong>! 🥐🎉 You’ve officially
-                arrived at the <em>tastiest</em> corner of the internet. We’re
-                baking, creating, and probably eating a few too many treats
-                along the way. Whether you’re here for something sweet,
-                something <em>savoury</em>, or just to have a little look
-                around, we’re happy to have you! Grab a coffee, follow the
-                delicious smells, and make yourself at home. 🍰✨
-              </p>
-              <div data-aos="fade-up">
-                <a href="./menu.html">Explore Our Menu</a>
-              </div>
+
+      <section class="page-section home-section">
+        <div class="home-container">
+          <div class="home-content">
+            <h1 class="home-title">
+              I'M <span class="highlight-text"> Sarah </span> a Baker based
+              somewhere on <em>EARTH</em>
+            </h1>
+
+            <p class="home-description">
+              Welcome to <strong>Sarah Maison</strong>! 🥐🎉 You’ve officially
+              arrived at the <em>tastiest</em> corner of the internet. We’re
+              baking, creating, and probably eating a few too many treats along
+              the way. Whether you’re here for something sweet, something
+              <em>savoury</em>, or just to have a little look around, we’re
+              happy to have you! Grab a coffee, follow the delicious smells, and
+              make yourself at home. 🍰✨
+            </p>
+
+            <div class="home-button-container">
+              <a href="./menu.html" class="button button-primary">
+                Explore Our Menu
+              </a>
             </div>
           </div>
         </div>
       </section>
+
       <!-- //HOME -->
+
       <!-- FIND US -->
-      <div>
+
+      <section class="find-us-section">
         <h2>Find Us</h2>
-        <div>
+
+        <div class="find-us-content">
           <h3>Phone</h3>
+
           <ul>
             <li>+1 (555) 123-4567</li>
           </ul>
 
           <h3>Address</h3>
+
           <ul>
             <li>123 Bakery Street</li>
             <li>City, State 12345</li>
           </ul>
+
           <h3>Hours</h3>
+
           <ul>
             <li>Monday - Friday: 8AM - 8PM</li>
             <li>Saturday: 9AM - 6PM</li>
           </ul>
         </div>
-      </div>
+      </section>
 
       <!-- FOOTER -->
-      <footer>
-        <div class="container">
-          <div>
-            <div>
-              <p class="mb-0">
-                Made with 💜 by <a href="#" class="fw-bold">sandramsc ©2026</a>
-              </p>
-            </div>
-            <div>
-              <div>
-                <a href="https://github.com/sandramsc"><i></i></a>
-                <a href="https://www.instagram.com/in/bakery"><i></i></a>
-              </div>
-            </div>
+
+      <footer class="site-footer">
+        <div class="footer-container">
+          <div class="footer-content">
+            <p class="footer-text">
+              Made with 💜 by
+              <a href="#" class="footer-link"> sandramsc ©2026 </a>
+            </p>
+          </div>
+
+          <div class="social-links">
+            <a href="https://github.com/sandramsc">
+              <i></i>
+            </a>
+
+            <a href="https://www.instagram.com/in/bakery">
+              <i></i>
+            </a>
           </div>
         </div>
       </footer>
+
       <!-- //FOOTER -->
     </div>
+
     <!-- //CONTENT WRAPPER -->
   </body>
 </html>

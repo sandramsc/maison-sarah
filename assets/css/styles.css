@@ -1,0 +1,185 @@
+/* Styles for the Sarah Maison website */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+h1,
+h2,
+h3 {
+  color: #333;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* NAVIGATION */
+
+.site-navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 240px;
+  height: 100vh;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 30px 20px;
+  box-sizing: border-box;
+}
+
+/* Bakery name */
+
+.site-name {
+  display: block;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-bottom: 30px;
+}
+
+/* Bakery image */
+
+.site-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 30px;
+}
+
+.navigation-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation-links li {
+  margin-bottom: 15px;
+}
+
+/* Navigation links */
+
+.navigation-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.navigation-links a:hover {
+  color: #d5c068;
+}
+
+/* MAIN CONTENT */
+
+.main-content {
+  margin-left: 240px;
+  min-height: 100vh;
+}
+
+.page-section {
+  min-height: 100vh;
+  padding: 80px;
+  box-sizing: border-box;
+}
+
+/* HOME PAGE */
+
+.home-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.home-content {
+  max-width: 800px;
+}
+
+.home-content h1 {
+  font-size: 48px;
+}
+
+.home-content p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* HOMEPAGE BUTTON */
+
+.button {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #d5c068;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background-color: #bca33d;
+}
+
+/* MENU PAGE */
+
+.menu-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.menu-intro {
+  margin-bottom: 40px;
+}
+
+.menu-category {
+  margin-bottom: 40px;
+}
+
+.menu-items {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-item {
+  padding: 12px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.price {
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+/* FIND US SECTION */
+
+.find-us {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.find-us ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* FOOTER SECTION */
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 30px;
+  text-align: center;
+}
+
+footer a {
+  color: #fff;
+}
