@@ -1,59 +1,65 @@
-/* Styles for the Sarah Maison website */
-
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
   background-color: #f8f8f8;
-  color: #333;
+  color: #333333;
+  font-family: Arial, sans-serif;
 }
+
+/* 
+   HEADER AND FOOTER
+ */
+
+header,
+footer {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+/* 
+   HEADINGS
+ */
 
 h1,
-h2,
-h3 {
-  color: #333;
+h2 {
+  color: #333333;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
+/* 
+   NAVIGATION
+ */
 
-/* NAVIGATION */
-
-.site-navigation {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 240px;
-  height: 100vh;
-  background-color: #333;
-  color: #fff;
+nav {
+  background-color: #333333;
+  color: #ffffff;
   text-align: center;
   padding: 30px 20px;
-  box-sizing: border-box;
 }
 
-/* Bakery name */
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+}
 
-.site-name {
+nav a:hover {
+  color: #d5c068;
+}
+
+/* 
+   BRAND
+ */
+
+.brand {
   display: block;
-  color: #fff;
+  color: #ffffff;
   font-size: 24px;
   font-weight: bold;
-  text-decoration: none;
   margin-bottom: 30px;
 }
 
-/* Bakery image */
-
-.site-image {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin-bottom: 30px;
-}
+/* 
+   NAVIGATION LINKS
+ */
 
 .navigation-links {
   list-style: none;
@@ -65,25 +71,49 @@ img {
   margin-bottom: 15px;
 }
 
-/* Navigation links */
-
 .navigation-links a {
-  color: #fff;
-  text-decoration: none;
+  color: #ffffff;
   font-weight: bold;
   text-transform: uppercase;
 }
 
-.navigation-links a:hover {
-  color: #d5c068;
+/* 
+   SIDEBAR LAYOUT
+ */
+
+.site-navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 240px;
+  height: 100vh;
+  box-sizing: border-box;
 }
 
-/* MAIN CONTENT */
+/* 
+   BAKERY IMAGE
+ */
+
+.site-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 30px;
+}
+
+/* 
+   MAIN CONTENT
+ */
 
 .main-content {
   margin-left: 240px;
   min-height: 100vh;
 }
+
+/* 
+   PAGE SECTIONS
+ */
 
 .page-section {
   min-height: 100vh;
@@ -91,7 +121,9 @@ img {
   box-sizing: border-box;
 }
 
-/* HOME PAGE */
+/* 
+   HOME
+ */
 
 .home-section {
   display: flex;
@@ -108,18 +140,15 @@ img {
   font-size: 48px;
 }
 
-.home-content p {
-  font-size: 18px;
-  line-height: 1.6;
-}
-
-/* HOMEPAGE BUTTON */
+/* 
+   BUTTON
+ */
 
 .button {
   display: inline-block;
   padding: 12px 25px;
   background-color: #d5c068;
-  color: #333;
+  color: #333333;
   text-decoration: none;
   font-weight: bold;
   border-radius: 5px;
@@ -129,7 +158,24 @@ img {
   background-color: #bca33d;
 }
 
-/* MENU PAGE */
+/* 
+   FIND US
+ */
+
+.find-us {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 60px 80px;
+}
+
+.find-us ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* 
+   MENU
+ */
 
 .menu-content {
   max-width: 900px;
@@ -140,8 +186,18 @@ img {
   margin-bottom: 40px;
 }
 
+.tagline {
+  color: #555555;
+  font-size: 24px;
+  font-weight: normal;
+}
+
 .menu-category {
-  margin-bottom: 40px;
+  margin-bottom: 50px;
+}
+
+.menu-category h3 {
+  margin-top: 30px;
 }
 
 .menu-items {
@@ -151,35 +207,41 @@ img {
 
 .menu-item {
   padding: 12px 0;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #dddddd;
 }
 
 .price {
+  color: #8a1c4a;
   font-weight: bold;
-  margin-left: 10px;
 }
 
-/* FIND US SECTION */
+/* 
+   ORDER
+ */
 
-.find-us {
+.order-content {
   max-width: 900px;
   margin: 0 auto;
+  text-align: center;
 }
 
-.find-us ul {
-  list-style: none;
-  padding: 0;
+.order-message {
+  margin-top: 40px;
+  padding: 30px;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
 }
 
-/* FOOTER SECTION */
+/* 
+   FOOTER
+ */
 
 footer {
-  background-color: #333;
-  color: #fff;
+  margin-left: 240px;
   padding: 30px;
   text-align: center;
 }
 
 footer a {
-  color: #fff;
+  color: #ffffff;
 }
