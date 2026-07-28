@@ -60,12 +60,7 @@ h2 {
  */
 
 nav {
-  background-color: #333333;
-  display: flex;
-  gap: 20px;
   color: #ffffff;
-  text-align: center;
-  padding: 30px 20px;
 }
 
 nav a {
@@ -80,11 +75,7 @@ nav a:hover {
 /* 
    BRAND
  */
-.hero-image {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
+
 .brand {
   color: #ffffff;
   font-size: 24px;
@@ -104,48 +95,33 @@ nav a:hover {
   padding: 0;
 }
 
-.navigation-links li {
-  margin-bottom: 15px;
-}
-
 .navigation-links a {
   color: #ffffff;
   font-weight: bold;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
-/* 
-   SIDEBAR LAYOUT
- */
-
-.site-navigation {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 240px;
-  height: 100vh;
-  box-sizing: border-box;
+.navigation-links a:hover {
+  color: #d5c068;
 }
 
 /* 
    BAKERY IMAGE
  */
 
-.hero-image {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin-bottom: 30px;
+.hero-banner {
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-/* 
-   MAIN CONTENT
- */
-
-.main-content {
-  margin-left: 240px;
-  min-height: 100vh;
+.hero-image {
+  width: 100%;
+  max-width: 100%;
+  height: 500px;
+  margin: 0;
+  border-radius: 50%;
 }
 
 /* 
@@ -207,10 +183,13 @@ nav a:hover {
   align-items: center;
   justify-content: center;
   text-align: center;
+  padding: 40px 0 80px;
 }
 
 .home-content {
-  max-width: 800px;
+  max-width: 700px;
+  margin: 0 auto;
+  flex: 1;
 }
 
 .home-content h1 {
@@ -239,17 +218,26 @@ nav a:hover {
    FIND US
  */
 
-.find-us {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 60px 80px;
+.find-us-section {
+  padding: 40px 0 80px;
 }
 
-.find-us ul {
-  list-style: none;
-  padding: 0;
+.find-us-section h2 {
+  margin-bottom: 30px;
+}
+.find-us-content {
+  max-width: 700px;
 }
 
+.find-us-content h3 {
+  margin-top: 25px;
+  margin-bottom: 8px;
+}
+
+find-us-content p {
+  margin: 0;
+  line-height: 1.6;
+}
 /* 
    MENU
  */
@@ -314,9 +302,10 @@ nav a:hover {
  */
 
 footer {
-  margin-left: 240px;
-  padding: 30px;
+  padding: 30px 0;
   text-align: center;
+  color: #ffffff;
+  background-color: #333333;
 }
 
 footer a {
