@@ -47,44 +47,51 @@
             </div>
 
             <div class="order-message">
-                <fieldset>
               <form action="" method="get">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Your Name" required />
-                <label for="email">Email</label>
-                <input
-                class="email"
-                  type="email"
-                  id="email"
-                  name="email"
+                <fieldset>
+                  <label for="name">Name</label>
+                  <input
+                    class="field"
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Your Name"
+                    required
+                  />
+                  <label for="email">Email</label>
+                  <input
+                    class="field"
+                    type="email"
+                    id="email"
+                    name="email"
                     placeholder="Your Email"
                     required
-                />
+                  />
                 </fieldset>
                 <fieldset>
                   <legend>Pickup Day</legend>
                   <div class="choice">
                     <input
                       type="radio"
-                      id="Satrday"
+                      id="satrday"
                       name="pickup-day"
                       value="Saturday"
                       checked
                     />
-                    <label for="name">Monday</label>
+                    <label for="name">Saturday</label>
                   </div>
-                    <div class="choice">
+                  <div class="choice">
                     <input
                       type="radio"
-                      id="Monday"
+                      id="monday"
                       name="pickup-day"
                       value="Monday"
                       checked
                     />
-                    <label for="name">Saturday</label>
+                    <label for="monday">Monday</label>
                   </div>
                   <label for="pickup-time">Pickup Time:</label>
-                  <select class="field"     id="pickup-time" name="pickup-time">
+                  <select class="field" id="pickup-time" name="pickup-time">
                     <option value="10:00">10:00</option>
                     <option value="11:00">11:00</option>
                     <option value="12:00">12:00</option>
@@ -92,7 +99,7 @@
                   </select>
                 </fieldset>
                 <fieldset>
-                  <legend>Order Details</legend>
+                  <legend>Your Order</legend>
                   <div class="choice">
                     <input
                       type="checkbox"
@@ -120,6 +127,13 @@
                     />
                     <label for="sourdough">Sourdough</label>
                   </div>
+                  <label for="notes">Additional Notes:</label>
+                  <textarea
+                    class="field notes-field"
+                    id="notes"
+                    name="notes"
+                    placeholder="Any special requests or instructions? P.S: We ship Ghanaian Jollof rice internationally, taste might change a little due to delivery times. I'm yet to try it first time myself so I wouldn't know any better, but I hear its better then Nigerian Jollof."
+                  ></textarea>
                 </fieldset>
                 <button type="submit">Submit order</button>
               </form>
