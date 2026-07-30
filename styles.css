@@ -117,11 +117,12 @@ nav a:hover {
 }
 
 .hero-image {
+  display: block;
   width: 100%;
   max-width: 100%;
   height: 500px;
   margin: 0;
-  border-radius: 50%;
+  object-fit: cover;
 }
 
 /* 
@@ -297,7 +298,7 @@ find-us-content p {
   border: 1px solid #dddddd;
 }
 /* 
-   TABLE
+   TABLES
  */
 
 table {
@@ -305,11 +306,94 @@ table {
   border-collapse: collapse;
   margin-top: 20px;
 }
-th,
+
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+th {
+  padding: 12px;
+  border: 1px solid #dddddd;
+  text-align: left;
+  background-color: #f2f2f2;
+}
+
 td {
   padding: 12px;
   border: 1px solid #dddddd;
   text-align: left;
+}
+
+/* 
+   FORM
+ */
+
+fieldset {
+  border: 1px solid #dddddd;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+legend {
+  font-weight: bold;
+  padding: 0 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.field {
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #dddddd;
+  max-width: 400px;
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.choice {
+  margin-bottom: 10px;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.choice label {
+  margin-bottom: 0;
+}
+
+input,
+select,
+textarea {
+  accent-color: #d5c068;
+}
+
+.field:focus {
+  outline: 3px solid #d5c068;
+  outline-offset: 2px;
+}
+
+.field:required {
+  border-left: 4px solid #d5c068;
+}
+
+button[type="submit"] {
+  background-color: #d5c068;
+  color: #333333;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #bca33d;
 }
 
 /* 

@@ -47,7 +47,82 @@
             </div>
 
             <div class="order-message">
-              <strong> The pre-order feature is coming soon </strong>
+                <fieldset>
+              <form action="" method="get">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required />
+                <label for="email">Email</label>
+                <input
+                class="email"
+                  type="email"
+                  id="email"
+                  name="email"
+                    placeholder="Your Email"
+                    required
+                />
+                </fieldset>
+                <fieldset>
+                  <legend>Pickup Day</legend>
+                  <div class="choice">
+                    <input
+                      type="radio"
+                      id="Satrday"
+                      name="pickup-day"
+                      value="Saturday"
+                      checked
+                    />
+                    <label for="name">Monday</label>
+                  </div>
+                    <div class="choice">
+                    <input
+                      type="radio"
+                      id="Monday"
+                      name="pickup-day"
+                      value="Monday"
+                      checked
+                    />
+                    <label for="name">Saturday</label>
+                  </div>
+                  <label for="pickup-time">Pickup Time:</label>
+                  <select class="field"     id="pickup-time" name="pickup-time">
+                    <option value="10:00">10:00</option>
+                    <option value="11:00">11:00</option>
+                    <option value="12:00">12:00</option>
+                    <option value="13:00">13:00</option>
+                  </select>
+                </fieldset>
+                <fieldset>
+                  <legend>Order Details</legend>
+                  <div class="choice">
+                    <input
+                      type="checkbox"
+                      id="croissant"
+                      name="order"
+                      value="Croissant"
+                    />
+                    <label for="croissant">Croissant</label>
+                  </div>
+                  <div class="choice">
+                    <input
+                      type="checkbox"
+                      id="baguette"
+                      name="order"
+                      value="Baguette"
+                    />
+                    <label for="baguette">Baguette</label>
+                  </div>
+                  <div class="choice">
+                    <input
+                      type="checkbox"
+                      id="sourdough"
+                      name="order"
+                      value="Sourdough"
+                    />
+                    <label for="sourdough">Sourdough</label>
+                  </div>
+                </fieldset>
+                <button type="submit">Submit order</button>
+              </form>
             </div>
           </div>
         </section>
