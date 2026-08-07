@@ -2,64 +2,167 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Sarah Maison Bakery</title>
+
+    <link rel="stylesheet" href="./styles.css" />
   </head>
+
   <body>
     <!-- NAVBAR -->
-    <nav>
-      <div>
-        <div id="navbarNav">
-          <ul>
-            <li>
-              <a href="./index.html">Home</a>
+    <header class="site-header">
+      <div class="header-container header-bar">
+        <a class="site-name brand" href="./index.html"> Sarah Maison </a>
+
+        <div class="navigation-menu">
+          <ul class="navigation-links">
+            <li class="navigation-item">
+              <a class="navigation-link" href="./index.html"> Home </a>
             </li>
-            <li>
-              <a href="./menu.html">Menu</a>
+
+            <li class="navigation-item">
+              <a class="navigation-link" href="./menu.html"> Menu </a>
             </li>
-            <li>
-              <a href="./order.html">Order</a>
+
+            <li class="navigation-item">
+              <a class="navigation-link" href="./order.html"> Order </a>
             </li>
           </ul>
         </div>
       </div>
-    </nav>
-    <!-- //NAVBAR -->
-    <!-- ORDER -->
-    <section id="order">
-      <div class="container">
-        <div>
-          <div>
-            <h1>Order Form</h1>
-            <h2>Interested in Placing an order?</h2>
-          </div>
+    </header>
 
-          <div>
-            <strong>The pre-order feature is coming soon</strong>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- //ORDER -->
-    <!-- FOOTER -->
-    <footer>
+    <!-- ORDER -->
+
+    <main class="main-content">
       <div class="container">
-        <div>
-          <div>
-            <p class="mb-0">
-              Made with 💜 by <a href="#" class="fw-bold">sandramsc ©2026</a>
-            </p>
-          </div>
-          <div>
-            <div>
-              <a href="https://github.com/sandramsc"
-                ><i class="lab la-github"></i
-              ></a>
-              <a href="https://www.instagram.com/in/bakery"
-                ><i class="lab la-linkedin"></i
-              ></a>
+        <section class="page-section order-section">
+          <div class="order-container">
+            <div class="order-introduction">
+              <h1>Order Form</h1>
+
+              <h2>Interested in Placing an order?</h2>
+            </div>
+
+            <div class="order-message">
+              <form action="" method="get">
+                <fieldset>
+                  <label for="name">Name</label>
+                  <input
+                    class="field"
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Your Name"
+                    required
+                  />
+                  <label for="email">Email</label>
+                  <input
+                    class="field"
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Your Email"
+                    required
+                  />
+                </fieldset>
+                <fieldset>
+                  <legend>Pickup Day</legend>
+                  <div class="choice">
+                    <input
+                      type="radio"
+                      id="satrday"
+                      name="pickup-day"
+                      value="Saturday"
+                      checked
+                    />
+                    <label for="name">Saturday</label>
+                  </div>
+                  <div class="choice">
+                    <input
+                      type="radio"
+                      id="monday"
+                      name="pickup-day"
+                      value="Monday"
+                      checked
+                    />
+                    <label for="monday">Monday</label>
+                  </div>
+                  <label for="pickup-time">Pickup Time:</label>
+                  <select class="field" id="pickup-time" name="pickup-time">
+                    <option value="10:00">10:00</option>
+                    <option value="11:00">11:00</option>
+                    <option value="12:00">12:00</option>
+                    <option value="13:00">13:00</option>
+                  </select>
+                </fieldset>
+                <fieldset>
+                  <legend>Your Order</legend>
+                  <div class="choice">
+                    <input
+                      type="checkbox"
+                      id="croissant"
+                      name="order"
+                      value="Croissant"
+                    />
+                    <label for="croissant">Croissant</label>
+                  </div>
+                  <div class="choice">
+                    <input
+                      type="checkbox"
+                      id="baguette"
+                      name="order"
+                      value="Baguette"
+                    />
+                    <label for="baguette">Baguette</label>
+                  </div>
+                  <div class="choice">
+                    <input
+                      type="checkbox"
+                      id="sourdough"
+                      name="order"
+                      value="Sourdough"
+                    />
+                    <label for="sourdough">Sourdough</label>
+                  </div>
+                  <label for="notes">Additional Notes:</label>
+                  <textarea
+                    class="field notes-field"
+                    id="notes"
+                    name="notes"
+                    placeholder="Any special requests or instructions? P.S: We ship Ghanaian Jollof rice internationally, taste might change a little due to delivery times. I'm yet to try it first time myself so I wouldn't know any better, but I hear its better then Nigerian Jollof."
+                  ></textarea>
+                </fieldset>
+                <button type="submit">Submit order</button>
+              </form>
             </div>
           </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-content">
+          <p class="footer-text">
+            Made with 💜 by
+
+            <a href="#" class="footer-link"> sandramsc ©2026 </a>
+          </p>
+        </div>
+
+        <div class="social-links">
+          <a href="https://github.com/sandramsc">
+            <i class="lab la-github"></i>
+          </a>
+
+          <a href="https://www.instagram.com/in/bakery">
+            <i class="lab la-linkedin"></i>
+          </a>
         </div>
       </div>
     </footer>

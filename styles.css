@@ -1,0 +1,442 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+  color: #333333;
+  font-family: "Lato", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+/* 
+   HEADER AND FOOTER
+ */
+
+header,
+footer {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.site-header {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.header-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+footer {
+  padding: 20px;
+}
+main {
+  padding: 40px 0px;
+}
+/* 
+   HEADINGS
+ */
+
+h1,
+h2 {
+  font-family: "Playfair Display", serif;
+  color: #333333;
+}
+
+h1 {
+  font-size: 3.2rem;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 2.4rem;
+  margin-bottom: 15px;
+}
+
+/* 
+   NAVIGATION
+ */
+
+nav {
+  color: #ffffff;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+nav a:hover {
+  color: #d5c068;
+}
+
+/* 
+   BRAND
+ */
+
+.brand {
+  color: #ffffff;
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* 
+   NAVIGATION LINKS
+ */
+
+.navigation-links {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-links a {
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.navigation-links a:hover {
+  color: #d5c068;
+}
+
+/* 
+   BAKERY IMAGE
+ */
+
+.hero-banner {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.hero-image {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: 500px;
+  margin: 0;
+  object-fit: cover;
+}
+
+/* 
+   PAGE SECTIONS
+ */
+
+.page-section {
+  min-height: 100vh;
+  padding: 80px;
+  box-sizing: border-box;
+}
+
+/* 
+   weekend specials section
+ */
+.weekend-specials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+  background-color: #f8f8f8;
+}
+
+.card-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.card {
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  padding: 20px;
+  flex: 1 1 250px;
+  box-sizing: border-box;
+}
+
+.card img {
+  max-width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.order-content {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+/* 
+   HOME
+ */
+
+.home-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 0 80px;
+}
+
+.home-content {
+  max-width: 700px;
+  margin: 0 auto;
+  flex: 1;
+}
+
+.home-content h1 {
+  font-size: 48px;
+}
+
+/* 
+   BUTTON
+ */
+
+.button {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #d5c068;
+  color: #333333;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background-color: #bca33d;
+}
+
+/* 
+   FIND US
+ */
+
+.find-us-section {
+  padding: 40px 0 80px;
+}
+
+.find-us-section h2 {
+  margin-bottom: 30px;
+}
+.find-us-content {
+  max-width: 700px;
+}
+
+.find-us-content h3 {
+  margin-top: 25px;
+  margin-bottom: 8px;
+}
+
+find-us-content p {
+  margin: 0;
+  line-height: 1.6;
+}
+/* 
+   MENU
+ */
+
+.menu-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.menu-intro {
+  margin-bottom: 40px;
+}
+
+.tagline {
+  color: #555555;
+  font-size: 2.4rem;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.menu-category {
+  margin-bottom: 50px;
+}
+
+.menu-category h3 {
+  margin-top: 30px;
+}
+
+.menu-items {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-item {
+  padding: 12px 0;
+  border-bottom: 1px solid #dddddd;
+}
+
+.price {
+  color: #8a1c4a;
+  font-weight: bold;
+}
+
+/* 
+   ORDER
+ */
+
+.order-content {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.order-message {
+  margin-top: 40px;
+  padding: 30px;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+}
+/* 
+   TABLES
+ */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+th {
+  padding: 12px;
+  border: 1px solid #dddddd;
+  text-align: left;
+  background-color: #f2f2f2;
+}
+
+td {
+  padding: 12px;
+  border: 1px solid #dddddd;
+  text-align: left;
+}
+
+/* 
+   FORM
+ */
+
+fieldset {
+  border: 1px solid #dddddd;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+legend {
+  font-weight: bold;
+  padding: 0 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.field {
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #dddddd;
+  max-width: 400px;
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.choice {
+  margin-bottom: 10px;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.choice label {
+  margin-bottom: 0;
+}
+
+input,
+select,
+textarea {
+  accent-color: #d5c068;
+}
+
+.field:focus {
+  outline: 3px solid #d5c068;
+  outline-offset: 2px;
+}
+
+.field:required {
+  border-left: 4px solid #d5c068;
+}
+
+.notes-field {
+  height: 100px;
+  resize: vertical;
+  max-width: 700px;
+  min-height: 80px;
+}
+button[type="submit"] {
+  background-color: #d5c068;
+  color: #333333;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #bca33d;
+}
+
+/* 
+   FOOTER
+ */
+
+footer {
+  padding: 30px 0;
+  text-align: center;
+  color: #ffffff;
+  background-color: #333333;
+}
+
+footer-text {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+footer a {
+  color: #ffffff;
+}
